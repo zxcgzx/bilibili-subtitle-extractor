@@ -5,406 +5,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bilibili视频字幕提取工具</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="免费在线提取Bilibili视频字幕，支持多种格式下载">
     <meta name="keywords" content="bilibili,字幕,提取,下载,视频,subtitle">
 </head>
 <body>
-    <!-- 全屏动态背景头部 -->
-    <header class="modern-header">
-        <!-- 动态背景层 -->
-        <div class="bg-layer bg-layer-1"></div>
-        <div class="bg-layer bg-layer-2"></div>
-        <div class="bg-layer bg-layer-3"></div>
-        
-        <!-- 几何装饰元素 -->
-        <div class="geometric-shapes">
-            <div class="shape shape-1 floating-element" data-speed="0.1"></div>
-            <div class="shape shape-2 floating-element" data-speed="0.15"></div>
-            <div class="shape shape-3 floating-element" data-speed="0.08"></div>
-            <div class="shape shape-4 floating-element" data-speed="0.12"></div>
-        </div>
-        
+    <!-- 简洁头部 -->
+    <header class="header">
         <div class="container">
-            <div class="header-content animate-on-scroll" data-animation="fadeInUp" data-delay="200">
-                <!-- 3D动画Logo -->
-                <div class="logo-container magnetic">
-                    <div class="logo-3d">
-                        <div class="logo-icon-modern">
-                            <div class="icon-layer icon-layer-1">🎬</div>
-                            <div class="icon-layer icon-layer-2">🎬</div>
-                            <div class="icon-layer icon-layer-3">🎬</div>
-                        </div>
-                        <h1 class="logo-text gradient-text">
-                            <span class="word word-1">Bilibili</span>
-                            <span class="word word-2">字幕提取工具</span>
-                        </h1>
-                    </div>
-                </div>
-                
-                <!-- 动态标语 -->
-                <div class="tagline-container animate-on-scroll" data-animation="scaleIn" data-delay="400">
-                    <p class="modern-tagline">
-                        <span class="tagline-primary">快速提取视频字幕</span>
-                        <span class="tagline-separator">•</span>
-                        <span class="tagline-secondary">支持多格式下载</span>
-                        <span class="tagline-separator">•</span>
-                        <span class="tagline-accent">100%本地处理</span>
-                    </p>
-                    
-                    <!-- 特性标签 -->
-                    <div class="feature-tags animate-on-scroll" data-animation="slideInUp" data-delay="600">
-                        <span class="tag tag-primary">免费</span>
-                        <span class="tag tag-secondary">安全</span>
-                        <span class="tag tag-accent">高效</span>
-                    </div>
+            <div class="header-content">
+                <h1 class="logo">🎬 Bilibili字幕提取工具</h1>
+                <p class="tagline">快速提取视频字幕，支持多格式下载，完全本地处理</p>
+                <div class="features-tags">
+                    <span class="tag">免费</span>
+                    <span class="tag">安全</span>
+                    <span class="tag">高效</span>
+                    <span class="tag">离线</span>
                 </div>
             </div>
-        </div>
-        
-        <!-- 波浪装饰 -->
-        <div class="wave-decoration">
-            <svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,60 C200,120 400,0 600,60 C800,120 1000,0 1200,60 L1200,120 L0,120 Z" 
-                      fill="rgba(255,255,255,0.1)" class="wave-path"/>
-            </svg>
         </div>
     </header>
 
     <!-- 主要内容 -->
     <main class="main">
         <div class="container">
-            <!-- 主要功能区域 -->
-            <section class="main-section">
-                <div class="section-container">
-                    
-                    <!-- 字幕提取工具 -->
-                    <div class="main-content" id="main-content">
-                        <!-- 3D功能特性展示 -->
-                        <div class="features-3d animate-on-scroll" data-animation="scaleIn" data-delay="800">
-                            <div class="feature-card magnetic" data-delay="0">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="feature-icon-3d">⚡</div>
-                                        <h4>快速提取</h4>
-                                        <p>复制粘贴即可完成</p>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="back-content">
-                                            <h4>超快速度</h4>
-                                            <p>毫秒级解析响应</p>
-                                            <div class="metrics">
-                                                <span class="metric">< 1s</span>
-                                                <span class="metric-label">解析时间</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="feature-card magnetic" data-delay="100">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="feature-icon-3d">🔒</div>
-                                        <h4>隐私安全</h4>
-                                        <p>本地处理，不上传数据</p>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="back-content">
-                                            <h4>零数据泄露</h4>
-                                            <p>完全离线处理</p>
-                                            <div class="metrics">
-                                                <span class="metric">100%</span>
-                                                <span class="metric-label">本地处理</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="feature-card magnetic" data-delay="200">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="feature-icon-3d">📄</div>
-                                        <h4>多格式支持</h4>
-                                        <p>SRT、VTT、TXT格式</p>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="back-content">
-                                            <h4>全格式兼容</h4>
-                                            <p>支持所有主流格式</p>
-                                            <div class="metrics">
-                                                <span class="metric">3+</span>
-                                                <span class="metric-label">输出格式</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="feature-card magnetic" data-delay="300">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="feature-icon-3d">👁️</div>
-                                        <h4>实时预览</h4>
-                                        <p>导出前预览效果</p>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="back-content">
-                                            <h4>即时预览</h4>
-                                            <p>所见即所得</p>
-                                            <div class="metrics">
-                                                <span class="metric">实时</span>
-                                                <span class="metric-label">预览更新</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 使用指南 -->
-                        <div class="usage-guide">
-                            <div class="quick-guide">
-                                <span class="guide-icon">💡</span>
-                                <strong>快速指南：</strong>F12 → Network → 搜索subtitle → 点击请求 → Response标签页 → 复制JSON → 粘贴到下方
-                            </div>
-                        </div>
-                        
-                        <div class="json-input-container">
-                            <!-- JSON输入区域 -->
-                            <div class="json-input-section">
-                                <h4>📋 粘贴字幕JSON数据</h4>
-                                <p class="section-hint">从开发者工具的Response/响应标签页复制JSON内容到下方文本框</p>
-                                <textarea 
-                                    id="jsonTextarea" 
-                                    class="json-textarea"
-                                    placeholder="请将从开发者工具Response/响应标签页复制的字幕JSON数据粘贴到此处...&#10;&#10;💡 获取步骤：&#10;1. 按F12打开开发者工具 → Network标签页&#10;2. 刷新页面，搜索 subtitle 或 ai_subtitle&#10;3. 点击字幕请求 → 切换到Response/响应标签页&#10;4. 复制JSON内容并粘贴到此处&#10;&#10;示例格式：&#10;{&#10;  &quot;body&quot;: [&#10;    {&#10;      &quot;from&quot;: 1.0,&#10;      &quot;to&quot;: 5.0,&#10;      &quot;content&quot;: &quot;字幕内容&quot;&#10;    }&#10;  ]&#10;}"
-                                    rows="15"
-                                ></textarea>
-                                
-                                <!-- 操作按钮 -->
-                                <div class="json-actions">
-                                    <button class="action-btn secondary glow-effect" id="clearJsonBtn">
-                                        <span class="btn-icon">🗑️</span>
-                                        清空
-                                    </button>
-                                    <button class="action-btn secondary glow-effect" id="pasteJsonBtn">
-                                        <span class="btn-icon">📋</span>
-                                        粘贴
-                                    </button>
-                                    <button class="action-btn primary glow-effect" id="parseJsonBtn">
-                                        <span class="btn-icon">🔍</span>
-                                        解析JSON
-                                    </button>
-                                </div>
-                            </div>
-                            
-                            <!-- 设置选项 -->
-                            <div class="conversion-options">
-                                <div class="options-compact">
-                                    <div class="compact-group">
-                                        <label>编码：</label>
-                                        <select name="encoding" class="compact-select">
-                                            <option value="utf-8" selected>UTF-8</option>
-                                            <option value="gbk">GBK</option>
-                                            <option value="gb2312">GB2312</option>
-                                        </select>
-                                    </div>
-                                    <div class="compact-group">
-                                        <label>换行符：</label>
-                                        <select name="linebreak" class="compact-select">
-                                            <option value="lf" selected>LF (Unix/Linux)</option>
-                                            <option value="crlf">CRLF (Windows)</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- JSON信息显示 -->
-                            <div class="json-info" id="jsonInfo" style="display: none;">
-                                <div class="info-header">
-                                    <span class="info-icon">✅</span>
-                                    <h5>JSON解析成功</h5>
-                                </div>
-                                <div class="info-details">
-                                    <span class="info-item">
-                                        <strong>字幕条数：</strong>
-                                        <span id="jsonSubtitleCount">0</span>
-                                    </span>
-                                    <span class="info-item">
-                                        <strong>总时长：</strong>
-                                        <span id="jsonDuration">0秒</span>
-                                    </span>
-                                    <span class="info-item">
-                                        <strong>总字符数：</strong>
-                                        <span id="jsonCharCount">0</span>
-                                    </span>
-                                </div>
-                            </div>
-                            
-                            <!-- 预览区域 -->
-                            <div class="preview-section" id="previewSection" style="display: none;">
-                                <h5>📖 字幕预览</h5>
-                                <div class="preview-controls">
-                                    <div class="format-tabs">
-                                        <button class="format-tab active" data-format="srt">SRT</button>
-                                        <button class="format-tab" data-format="vtt">VTT</button>
-                                        <button class="format-tab" data-format="txt">TXT</button>
-                                    </div>
-                                    <button class="refresh-preview-btn" id="refreshPreviewBtn">
-                                        <span>🔄</span> 刷新预览
-                                    </button>
-                                </div>
-                                <textarea 
-                                    id="previewTextarea" 
-                                    class="preview-textarea" 
-                                    readonly
-                                    placeholder="预览内容将显示在此处..."
-                                    rows="12"
-                                ></textarea>
-                            </div>
-
-                            <!-- 转换按钮 -->
-                            <div class="convert-actions" id="convertActions" style="display: none;">
-                                <button class="convert-btn glow-effect animate-scaleIn" data-format="srt">
-                                    <span class="format-icon">📄</span>
-                                    <div class="format-info">
-                                        <span class="format-name">下载SRT文件</span>
-                                        <span class="format-desc">标准字幕格式</span>
-                                    </div>
-                                </button>
-                                <button class="convert-btn glow-effect animate-scaleIn" data-format="vtt" style="animation-delay: 0.1s;">
-                                    <span class="format-icon">🌐</span>
-                                    <div class="format-info">
-                                        <span class="format-name">下载VTT文件</span>
-                                        <span class="format-desc">网页字幕格式</span>
-                                    </div>
-                                </button>
-                                <button class="convert-btn glow-effect animate-scaleIn" data-format="txt" style="animation-delay: 0.2s;">
-                                    <span class="format-icon">📝</span>
-                                    <div class="format-info">
-                                        <span class="format-name">下载TXT文件</span>
-                                        <span class="format-desc">纯文本格式</span>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- 重要说明 -->
-                        <div class="important-notice">
-                            <h4>⚠️ 重要说明：不同视频类型的处理方法</h4>
-                            <div class="notice-grid">
-                                <div class="notice-item type-1">
-                                    <div class="notice-header">
-                                        <span class="notice-icon">✅</span>
-                                        <h5>有外挂字幕的视频</h5>
-                                    </div>
-                                    <p><strong>搜索关键词：</strong><code>subtitle</code></p>
-                                    <p>这类视频有专门的字幕文件，可以直接搜索"subtitle"找到字幕数据。通常字幕质量较高，推荐优先使用。</p>
-                                </div>
-                                
-                                <div class="notice-item type-2">
-                                    <div class="notice-header">
-                                        <span class="notice-icon">🤖</span>
-                                        <h5>有字幕按钮但无外挂字幕</h5>
-                                    </div>
-                                    <p><strong>搜索关键词：</strong><code>ai_subtitle</code></p>
-                                    <p>这类视频使用AI生成字幕，在Network过滤框中搜索"ai_subtitle"可以找到相关数据。字幕准确度可能略低。</p>
-                                </div>
-                                
-                                <div class="notice-item type-3">
-                                    <div class="notice-header">
-                                        <span class="notice-icon">❌</span>
-                                        <h5>无字幕按钮的视频</h5>
-                                    </div>
-                                    <p><strong>状态：</strong>暂无解决方案</p>
-                                    <p>这类视频既没有外挂字幕，也没有AI生成字幕，目前无法提取字幕内容。</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 获取教程 -->
-                        <div class="tutorial-section">
-                            <div class="tutorial-toggle">
-                                <button class="tutorial-btn" id="tutorialToggle">
-                                    <span class="tutorial-icon">📖</span>
-                                    <span>查看详细教程</span>
-                                    <span class="toggle-arrow">▼</span>
-                                </button>
-                            </div>
-                            <div class="tutorial-content" id="tutorialContent" style="display: none;">
-                                <div class="tutorial-steps-grid">
-                                    <div class="step-card">
-                                        <div class="step-number">1</div>
-                                        <h5>打开开发者工具</h5>
-                                        <p>按F12键，切换到Network标签页</p>
-                                    </div>
-                                    <div class="step-card">
-                                        <div class="step-number">2</div>
-                                        <h5>搜索字幕数据</h5>
-                                        <p>刷新页面，搜索"subtitle"或"ai_subtitle"</p>
-                                    </div>
-                                    <div class="step-card">
-                                        <div class="step-number">3</div>
-                                        <h5>复制JSON数据</h5>
-                                        <p>点击字幕请求 → Response标签页 → 复制JSON</p>
-                                    </div>
-                                </div>
-                                <div class="tutorial-tips">
-                                    <div class="tip-item">
-                                        <span class="tip-icon">💡</span>
-                                        <span><strong>关键：</strong>必须切换到Response/响应标签页才能看到JSON数据</span>
-                                    </div>
-                                    <div class="tip-item">
-                                        <span class="tip-icon">🔍</span>
-                                        <span>如果搜索<code>subtitle</code>找不到，尝试搜索<code>ai_subtitle</code></span>
-                                    </div>
-                                    <div class="tip-item">
-                                        <span class="tip-icon">⌨️</span>
-                                        <span>在Response标签页可以Ctrl+A全选，然后Ctrl+C复制</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- 错误提示 -->
-            <section class="error-section" id="errorSection" style="display: none;">
-                <div class="error-container">
-                    <div class="error-icon">⚠️</div>
-                    <h3>提取失败</h3>
-                    <p class="error-message" id="errorMessage"></p>
-                    <button class="retry-btn" id="retryBtn">重试</button>
-                </div>
-            </section>
-
             <!-- 功能特性 -->
-            <section class="features-section">
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <span class="feature-icon">🛡️</span>
-                        <span class="feature-text">完全离线处理，隐私安全</span>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <div class="feature-title">快速提取</div>
+                    <div class="feature-desc">复制粘贴即可完成</div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🔒</span>
+                    <div class="feature-title">隐私安全</div>
+                    <div class="feature-desc">本地处理，不上传数据</div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📄</span>
+                    <div class="feature-title">多格式支持</div>
+                    <div class="feature-desc">SRT、VTT、TXT格式</div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">👁️</span>
+                    <div class="feature-title">实时预览</div>
+                    <div class="feature-desc">导出前预览效果</div>
+                </div>
+            </div>
+
+            <!-- 使用指南 -->
+            <div class="guide-section">
+                <h3 class="guide-title">💡 快速指南</h3>
+                <div class="guide-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <span class="step-text">按F12打开开发者工具 → Network标签页</span>
                     </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">🔄</span>
-                        <span class="feature-text">实时预览多种格式输出</span>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-text">刷新页面，搜索"subtitle"或"ai_subtitle"</span>
                     </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">⚙️</span>
-                        <span class="feature-text">支持自定义编码和换行符</span>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-text">点击字幕请求 → Response标签页 → 复制JSON</span>
                     </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">📱</span>
-                        <span class="feature-text">响应式设计，移动友好</span>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <span class="step-text">粘贴JSON到下方文本框 → 解析 → 下载</span>
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <!-- 主要功能区域 -->
+            <div class="main-content">
+                <!-- JSON输入区域 -->
+                <div class="json-section">
+                    <h3 class="section-title">
+                        📋 粘贴字幕JSON数据
+                    </h3>
+                    <p class="section-hint">从开发者工具的Response/响应标签页复制JSON内容到下方文本框</p>
+                    
+                    <textarea 
+                        id="jsonTextarea" 
+                        class="json-textarea"
+                        placeholder="请将从开发者工具Response/响应标签页复制的字幕JSON数据粘贴到此处...
+
+💡 获取步骤：
+1. 按F12打开开发者工具 → Network标签页
+2. 刷新页面，搜索 subtitle 或 ai_subtitle
+3. 点击字幕请求 → 切换到Response/响应标签页
+4. 复制JSON内容并粘贴到此处
+
+示例格式：
+{
+  &quot;body&quot;: [
+    {
+      &quot;from&quot;: 1.0,
+      &quot;to&quot;: 5.0,
+      &quot;content&quot;: &quot;字幕内容&quot;
+    }
+  ]
+}"
+                        rows="12"
+                    ></textarea>
+                    
+                    <!-- 操作按钮 -->
+                    <div class="json-actions">
+                        <button class="btn btn-secondary" id="clearJsonBtn">
+                            <span class="btn-icon">🗑️</span>
+                            清空
+                        </button>
+                        <button class="btn btn-secondary" id="pasteJsonBtn">
+                            <span class="btn-icon">📋</span>
+                            粘贴
+                        </button>
+                        <button class="btn btn-primary" id="parseJsonBtn">
+                            <span class="btn-icon">🔍</span>
+                            解析JSON
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 设置选项 -->
+                <div class="settings-section">
+                    <div class="setting-group">
+                        <label class="setting-label">编码：</label>
+                        <select name="encoding" class="setting-select">
+                            <option value="utf-8" selected>UTF-8</option>
+                            <option value="gbk">GBK</option>
+                            <option value="gb2312">GB2312</option>
+                        </select>
+                    </div>
+                    <div class="setting-group">
+                        <label class="setting-label">换行符：</label>
+                        <select name="linebreak" class="setting-select">
+                            <option value="lf" selected>LF (Unix/Linux)</option>
+                            <option value="crlf">CRLF (Windows)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- JSON信息显示 -->
+                <div class="json-info" id="jsonInfo">
+                    <div class="info-header">✅ JSON解析成功</div>
+                    <div class="info-details">
+                        <span>字幕条数：<strong id="jsonSubtitleCount">0</strong></span>
+                        <span>总时长：<strong id="jsonDuration">0秒</strong></span>
+                        <span>总字符数：<strong id="jsonCharCount">0</strong></span>
+                    </div>
+                </div>
+
+                <!-- 预览区域 -->
+                <div class="preview-section" id="previewSection">
+                    <div class="preview-header">
+                        <h4>📖 字幕预览</h4>
+                        <div class="format-tabs">
+                            <button class="format-tab active" data-format="srt">SRT</button>
+                            <button class="format-tab" data-format="vtt">VTT</button>
+                            <button class="format-tab" data-format="txt">TXT</button>
+                        </div>
+                    </div>
+                    <textarea 
+                        id="previewTextarea" 
+                        class="preview-textarea" 
+                        readonly
+                        placeholder="预览内容将显示在此处..."
+                    ></textarea>
+                </div>
+
+                <!-- 转换按钮 -->
+                <div class="convert-actions" id="convertActions">
+                    <button class="convert-btn" data-format="srt">
+                        <span class="format-icon">📄</span>
+                        <span class="format-name">下载SRT文件</span>
+                        <span class="format-desc">标准字幕格式</span>
+                    </button>
+                    <button class="convert-btn" data-format="vtt">
+                        <span class="format-icon">🌐</span>
+                        <span class="format-name">下载VTT文件</span>
+                        <span class="format-desc">网页字幕格式</span>
+                    </button>
+                    <button class="convert-btn" data-format="txt">
+                        <span class="format-icon">📝</span>
+                        <span class="format-name">下载TXT文件</span>
+                        <span class="format-desc">纯文本格式</span>
+                    </button>
+                </div>
+
+                <!-- 重要说明 -->
+                <div class="tutorial-section">
+                    <div class="tutorial-toggle">
+                        <button class="tutorial-btn" id="tutorialToggle">
+                            📖 查看详细教程 ▼
+                        </button>
+                    </div>
+                    <div class="tutorial-content" id="tutorialContent">
+                        <div class="tutorial-steps">
+                            <div class="tutorial-step">
+                                <h4>⚠️ 重要说明：不同视频类型的处理方法</h4>
+                                <p><strong>有外挂字幕的视频：</strong>搜索关键词"subtitle"，这类视频有专门的字幕文件，质量较高。</p>
+                                <p><strong>有字幕按钮但无外挂字幕：</strong>搜索关键词"ai_subtitle"，这类视频使用AI生成字幕。</p>
+                                <p><strong>无字幕按钮的视频：</strong>暂无解决方案，无法提取字幕内容。</p>
+                            </div>
+                            <div class="tutorial-step">
+                                <h4>💡 获取字幕JSON的详细步骤</h4>
+                                <p>1. 在B站视频页面按F12打开开发者工具</p>
+                                <p>2. 切换到Network（网络）标签页</p>
+                                <p>3. 刷新视频页面</p>
+                                <p>4. 在过滤框中搜索"subtitle"或"ai_subtitle"</p>
+                                <p>5. 点击找到的请求，切换到Response（响应）标签页</p>
+                                <p>6. 复制JSON内容，粘贴到上方文本框</p>
+                            </div>
+                            <div class="tutorial-step">
+                                <h4>🔧 使用技巧</h4>
+                                <p>• 在Response标签页可以用Ctrl+A全选，然后Ctrl+C复制</p>
+                                <p>• 支持多种JSON格式，工具会自动识别和转换</p>
+                                <p>• 所有处理都在本地完成，不会上传任何数据</p>
+                                <p>• 支持自定义编码和换行符格式</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -412,27 +233,30 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Bilibili字幕提取工具 | 仅供学习交流使用</p>
-            <p class="disclaimer">本工具仅提取公开视频的字幕信息，请遵守相关法律法规</p>
+            <p>本工具仅提取公开视频的字幕信息，请遵守相关法律法规</p>
         </div>
     </footer>
 
+    <!-- 错误提示 -->
+    <div class="error-section" id="errorSection">
+        <h3>⚠️ 提取失败</h3>
+        <p id="errorMessage"></p>
+        <button class="btn btn-secondary" id="retryBtn">重试</button>
+    </div>
+
     <!-- 加载提示 -->
-    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+    <div class="loading-overlay" id="loadingOverlay">
         <div class="loading-content">
             <div class="loading-spinner"></div>
-            <p>正在提取字幕，请稍候...</p>
+            <p>正在处理字幕数据，请稍候...</p>
         </div>
     </div>
 
     <!-- 成功提示 -->
-    <div class="toast" id="toast" style="display: none;">
-        <div class="toast-content">
-            <span class="toast-icon">✅</span>
-            <span class="toast-message" id="toastMessage"></span>
-        </div>
+    <div class="toast" id="toast">
+        <span id="toastMessage"></span>
     </div>
 
-    <script src="animations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
